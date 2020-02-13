@@ -15,5 +15,5 @@
 
 ### Atom:
 1. Install following packages in Atom which will make it easier for us to work with CSV and Logstash config files. In Atom go to File -> Settings -> Install
-  1. language-logstash
-  1. rainbow-CSV
+    1. language-logstash
+    1. rainbow-CSV
