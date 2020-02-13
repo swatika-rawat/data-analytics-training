@@ -20,7 +20,7 @@
 1. Add logstash bin directory to PATH
 1. (Optional) Install logstash-output-jdbc plugin [link](https://github.com/theangryangel/logstash-output-jdbc)
 
-###Kibana:
+### Kibana:
 1. Extract the zip at D:\elk
 1. Go to D:\elk\kibana-7.6.0-windows-x86_64\bin and execute kibana.bat
 1. Open http://localhost:5601 in browser and verify that Kibana is running
@@ -30,6 +30,6 @@
     1. language-logstash
     1. rainbow-CSV
 
-###Training Setup:
+### Training Setup:
 1. Extract datasets.zip to D:\elk
 1. Create directory "sincedb" in D:\elk
