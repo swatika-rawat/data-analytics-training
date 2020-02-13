@@ -59,3 +59,9 @@ footer {
   padding: 5px;
   height: 35px;
 }
+
+.code {
+  font-family: monospace;
+  margin-left: 20px;
+  padding: 20px;
+}
