@@ -13,9 +13,9 @@ $(".nav .nav-link").on("click", function() {
 $("#search-form").on("submit", function() {
   $.ajax({
     method: "POST",
-    url: "http://localhost:9200/agriculture/_search",
+    url: "http://localhost:9200/" + $('#indexInput').val() + "/_search",
     contentType: "application/json",
-    data: '{ "query": { "match_all": {} } }'
+    data: '{ "query": { "term": { "' + $('#termInput').val() + '.keyword" : { "value" : "' + $('#textInput').val() +'" } } } }'
   }).done(function(data) {
     console.log(data);
     $("#results-error-div").hide();
