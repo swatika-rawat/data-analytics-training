@@ -8,6 +8,7 @@
 1. Logstash 7.6 (zip) [download](https://www.elastic.co/downloads/logstash)
 1. Kibana 7.6 (zip) [download](https://www.elastic.co/start)
 1. Any Modern Text Editor like Atom, Sublime Text, Visual Studio Code, Brackets etc. For this session we will be using Atom [download](https://atom.io/)
+1. Any browser, preferably Google Chrome, Mozilla Firefox
 
 ## Setup:
 ### Elasticsearch
@@ -17,7 +18,7 @@
 
 ### Logstash:
 1. Extract the zip at D:\elk
-1. Add logstash bin directory to PATH
+1. Add Logstash's bin directory to PATH environment variable. (Control Panel -> System -> Advanced System Settings -> Environment Variable -> Select "PATH" -> Edit -> New -> Enter "D:\elk\logstash-7.6.0\bin" -> Ok)
 1. (Optional) Install logstash-output-jdbc plugin [link](https://github.com/theangryangel/logstash-output-jdbc)
 
 ### Kibana:
