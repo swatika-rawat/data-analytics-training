@@ -54,24 +54,33 @@
                 </div>
               </div>
             </form>
-            <div id="results-div" style="display: none;">
+            <div id="results-success-div" style="display: none;">
               <hr>
-              <h2 class="text-center">Results</h2>
               <div class="row">
                 <div class="col-sm-12">
-                    <table id="results-table" class="table table-secondary table-bordered">
-                      <thead>
-                        <tr>
-                          <th>Total Hits</th>
-                          <th>Time Taken (ms)</th>
-                        </tr>
-                      </thead>
+                  <h3 class="text-center">Results</h3>
+                  <table id="results-table" class="table table-secondary table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Total Hits</th>
+                        <th>Time Taken (ms)</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                  </table>
+                  <div class="sample-data">
+                    <h3 class="text-center">Sample Data</h3>
+                    <table id="sample-data-table" class="table table-striped table-bordered table-responsive">
                       <tbody>
-                        
                       </tbody>
                     </table>
+                  </div>
                 </div>
               </div>
+            </div>
+            <div id="results-error-div" style="display:none">
+              <p class="text-center">Error occurred</p>
             </div>
           </div>
           <div class="content visualize" style="display: none;">
