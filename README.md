@@ -36,3 +36,10 @@
 ### Training Setup:
 1. Extract datasets.zip to D:\elk\datasets directory
 1. Copy the downloaded JDBC driver jar file to D:\elk\db_drivers directory
+
+### Dataset Sources:
+1. https://www.kaggle.com/lakshyaag/india-trade-data
+1. https://www.kaggle.com/sudalairajkumar/indian-startup-funding
+1. https://www.kaggle.com/pavano1760/all-bollywood-movies-2019
+1. https://www.kaggle.com/ruben99/air-pollution-dataset-india20162018
+1. https://www.kaggle.com/anjali21/agricultural-production-india
