@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/Chart.min.css">
   </head>
   <body>
     <header class="container-fluid">
@@ -28,7 +29,7 @@
               <div class="container">
                 <h2>Welcome to Data Analytics through Elastic Stack</h2>
                 <br>
-                <img src="images/analytics3.jpg" alt="">
+                <img src="images/analytics2.jpg" alt="">
                 <br><br>
                 <p>
                   In order to access data directly from Elasticsearch please add the following in elasticsearch.yml file located under config directory of Elasticsearch installation:
@@ -57,7 +58,7 @@
               </div>
               <div class="row">
                 <div class="col-sm-12">
-                  <button type="submit" class="float-right btn btn-primary">Submit</button>
+                  <button type="submit" class="float-right btn btn-primary">Search</button>
                 </div>
               </div>
             </form>
@@ -91,7 +92,31 @@
             </div>
           </div>
           <div class="content visualize" style="display: none;">
-            Visualize
+            <h2 class="text-center">Search</h2>
+            <form id="visualize-form">
+              <div class="form-group row">
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="visualizeIndexInput" placeholder="Index Name" required>
+                </div>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="visualizeTextInput" placeholder="Term Field" required>
+                </div>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="visualizeSizeInput" placeholder="Size" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <button type="submit" class="float-right btn btn-primary">Visualize</button>
+                </div>
+              </div>
+            </form>
+            <div id="chart-success-div" style="display: none;">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div id="chart-error-div" style="display:none">
+              <p class="text-center">Error occurred</p>
+            </div>
           </div>
         </div>
       </div>
@@ -103,5 +128,6 @@
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/Chart.min.js"></script>
   </body>
 </html>

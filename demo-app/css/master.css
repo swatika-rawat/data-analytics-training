@@ -69,3 +69,8 @@ footer {
 .sample-data {
   font-size: 0.8em;
 }
+
+#chart-success-div {
+  width: 800px;
+  height: 600px;
+}
