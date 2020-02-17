@@ -46,4 +46,4 @@
 
 ### File System Crawler for Elasticsearch:
 You need to install a fscrawler version matching your Elasticsearch version
-For Elasticsearch 6.x and 7.x, you can download 2.7-SNAPSHOT [download](https://fscrawler.readthedocs.io/en/latest/installation.html)
+For ES 6.x and 7.x, you can download 2.7-SNAPSHOT [download](https://fscrawler.readthedocs.io/en/latest/installation.html)
