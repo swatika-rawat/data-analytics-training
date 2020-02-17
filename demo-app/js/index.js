@@ -66,6 +66,7 @@ $("#search-form").on("submit", function() {
 });
 
 //visualize
+var myChart;
 $("#visualize-form").on("submit", function() {
   $.ajax({
     method: "POST",
@@ -83,10 +84,13 @@ $("#visualize-form").on("submit", function() {
       keys.push(bucket.key);
       doc_counts.push(bucket.doc_count);
     }
-    console.log(keys);
-    console.log(doc_counts);
+    //console.log(keys);
+    //console.log(doc_counts);
+    if(myChart) {
+      myChart.destroy(); //Clear previous chart, if present
+    }
     var ctx = document.getElementById('myChart').getContext('2d');
-    var myChart = new Chart(ctx, {
+    myChart = new Chart(ctx, {
         type: 'bar',
         data: {
             labels: keys,
