@@ -15,7 +15,7 @@ $("#search-form").on("submit", function() {
     method: "POST",
     url: "http://localhost:9200/" + $('#indexInput').val() + "/_search",
     contentType: "application/json",
-    data: '{ "query": { "term": { "' + $('#termInput').val() + '.keyword" : { "value" : "' + $('#textInput').val() +'" } } } }'
+    data: '{ "track_total_hits": true, "query": { "match": { "' + $('#matchInput').val() + '": "' + $('#textInput').val() +'" } } }'
   }).done(function(data) {
     console.log(data);
     $("#results-error-div").hide();
@@ -55,7 +55,7 @@ $("#search-form").on("submit", function() {
         break;
       }
     }
-    console.log(rows_string);
+    //console.log(rows_string);
     //Append sample data rows
     $('#sample-data-table > tbody:last-child').append(rows_string);
   }).fail(function(data) {
