@@ -43,3 +43,7 @@
 1. https://www.kaggle.com/pavano1760/all-bollywood-movies-2019
 1. https://www.kaggle.com/ruben99/air-pollution-dataset-india20162018
 1. https://www.kaggle.com/anjali21/agricultural-production-india
+
+### File System Crawler for Elasticsearch
+You need to install a version matching your Elasticsearch version:
+For Elasticsearch 6.x and 7.x, you can download 2.7-SNAPSHOT [download](https://fscrawler.readthedocs.io/en/latest/)
